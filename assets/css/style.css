@@ -76,3 +76,10 @@ form select:hover{
 footer{
     text-align: center;
 }
+@media (max-width: 526px){ 
+    form {width: 80%;
+    }
+    form button{
+        width: 30vw;
+    }
+}
