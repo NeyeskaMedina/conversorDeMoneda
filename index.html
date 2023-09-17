@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--CDN AXIOS-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--CDN CHART.JS-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Conversor de Moneda</title>
+</head>
+<body>
+    <main>
+        <h1>Conversor de monedas - Nacional</h1>
+        <form action="">
+            <label for="peso">Pesos CLP</label>
+            <input 
+                type="number" 
+                name="" 
+                id="peso"
+                min="1"
+                required
+            >
+            <label for="currency">Moneda a convertir</label>
+            <select 
+                name="" 
+                id="select"
+                >
+                <option id="dolar" value="dolar">Dolar</option>
+                <option id="euro" value="euro">Euro</option>
+                <option value="bitcoin">Bitcoin</option>
+            </select>
+            <button 
+                id="btnConvert"
+                type="button">Convertir
+            </button>
+            <div id="result" class="result"></div>
+        </form>
+        <h1 id="title"></h1>
+            <div id="graph">
+                <canvas id="myChart"></canvas>
+            </div>
+    </main>
+    <footer>
+        <p>@For by Neyeska_Goidas</p>
+    </footer>
+
+    <!--LOCALES-->
+    <script src="assets/js/function.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
